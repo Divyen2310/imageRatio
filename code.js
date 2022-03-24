@@ -45,6 +45,7 @@ function mousedown(e) {
     prevY = e.clientY;
   }
   function mouseup() {
+    console.log("mouseup");
     window.removeEventListener("mousemove", mousemove);
     window.removeEventListener("mouseup", mouseup);
     isResizing = false; // not in use
